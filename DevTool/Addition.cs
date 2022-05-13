@@ -26,7 +26,7 @@ namespace DevTool
             throw new NotImplementedException();
         }
 
-        public  void Definition()
+        public void Definition()
         {
             throw new NotImplementedException();
         }

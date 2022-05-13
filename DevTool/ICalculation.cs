@@ -8,10 +8,10 @@ namespace DevTool
 {
     public interface ICalculation
     {
-        public abstract void Definition();
-        public abstract void CalcWithTwoPassedValues(float numberOne, float numberTwo);
+        void Definition();
+        void CalcWithTwoPassedValues(float numberOne, float numberTwo);
 
-        public abstract void CalcWithoutPassedValues();
-        public abstract void CalcWithOnePassedValue(float numberOne);
+        void CalcWithoutPassedValues();
+        void CalcWithOnePassedValue(float numberOne);
     }
 }
