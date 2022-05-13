@@ -6,18 +6,9 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Division : ICalculation
+    internal class Division : IBasicCalculation
     {
         private float result;
-        public void CalcWithOnePassedValue(float numberOne)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CalcWithoutPassedValues()
-        {
-            throw new NotImplementedException();
-        }
 
         public void CalcWithTwoPassedValues(float numberOne, float numberTwo)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Fibonacci : ICalculation
+    internal class Fibonacci : IAdvancedCalculation
     {
         private int result;
         private int numberOneFib = 1;

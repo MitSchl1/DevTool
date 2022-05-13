@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    public interface ICalculation
+    public interface IAdvancedCalculation
     {
         void Definition();
         void CalcWithTwoPassedValues(float numberOne, float numberTwo);

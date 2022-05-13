@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Log2 : ICalculation
+    internal class Log2 : IAdvancedCalculation
     {
         private double result;
         public  void CalcWithOnePassedValue(float numberOne)

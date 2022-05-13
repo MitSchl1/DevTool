@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Addition : ICalculation
+    internal class Addition : IBasicCalculation
 
     {
         private float result;
@@ -14,16 +14,6 @@ namespace DevTool
         {
             result = numberOne + numberTwo;
             Console.WriteLine(result);
-        }
-
-        public  void CalcWithoutPassedValues()
-        {
-            throw new NotImplementedException();
-        }
-
-        public  void CalcWithOnePassedValue(float numberOne)
-        {
-            throw new NotImplementedException();
         }
 
         public void Definition()

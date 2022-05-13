@@ -6,23 +6,13 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Substraction : ICalculation
+    internal class Substraction : IBasicCalculation
     {
         private float result;
         public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
         {
             result = numberOne - numberTwo;
             Console.WriteLine(result);
-        }
-
-        public  void CalcWithoutPassedValues()
-        {
-            throw new NotImplementedException();
-        }
-
-        public  void CalcWithOnePassedValue(float numberOne)
-        {
-            throw new NotImplementedException();
         }
 
         public  void Definition()
