@@ -6,17 +6,27 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Addition : Calculation
+    internal class Addition : ICalculation
 
     {
         private float result;
-        public override void Calc(float numberOne, float numberTwo)
+        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
         {
             result = numberOne + numberTwo;
             Console.WriteLine(result);
         }
 
-        public override void Definition()
+        public  void CalcWithoutPassedValues()
+        {
+            throw new NotImplementedException();
+        }
+
+        public  void CalcWithOnePassedValue(float numberOne)
+        {
+            throw new NotImplementedException();
+        }
+
+        public  void Definition()
         {
             throw new NotImplementedException();
         }

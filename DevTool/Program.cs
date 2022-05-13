@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DevTool;
+using System.Data.SqlClient;
 
 Addition add = new();
-Subtraction sub = new();
+Fibonacci sub = new();
 Multiplication multiplication = new();
 Division division = new();
 
@@ -30,19 +31,19 @@ while (userNotFinished)
                     break;
                 case 1:
                     userNumbers = userNumbersforStandardCalc();
-                    add.Calc(userNumbers[0], userNumbers[1]);
+                    add.CalcWithTwoPassedValues(userNumbers[0], userNumbers[1]);
                     break;
                 case 2:
                     userNumbers = userNumbersforStandardCalc();
-                    sub.Calc(userNumbers[0], userNumbers[1]);
+                    sub.CalcWithTwoPassedValues(userNumbers[0], userNumbers[1]);
                     break;
                 case 3:
                     userNumbers = userNumbersforStandardCalc();
-                    multiplication.Calc(userNumbers[0], userNumbers[1]);
+                    multiplication.CalcWithTwoPassedValues(userNumbers[0], userNumbers[1]);
                     break;
                 case 4:
                     userNumbers = userNumbersforStandardCalc();
-                    division.Calc(userNumbers[0], userNumbers[1]);
+                    division.CalcWithTwoPassedValues(userNumbers[0], userNumbers[1]);
                     break;
                 default:
                     Console.WriteLine("nicht vorhanden");
@@ -81,4 +82,5 @@ void calculationPosisibilities()
     Console.WriteLine("4 fuer Division");
 
 }
+
 
