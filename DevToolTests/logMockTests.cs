@@ -5,7 +5,7 @@ using Moq;
 
 namespace DevToolTests
 {
-    public class logMockTests
+    public class LogMockTests
     {
         [Fact]
         public void LogToAnyBaseMock_Test()

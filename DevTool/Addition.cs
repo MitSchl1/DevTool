@@ -18,7 +18,15 @@ namespace DevTool
 
         public void Definition()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Die Addition (lateinisch additio, von addere „hinzufügen“), ");
+            Console.WriteLine("umgangssprachlich auch Plus-Rechnen oder Und-Rechnen genannt, ");
+            Console.WriteLine("ist eine der vier Grundrechenarten in der Arithmetik. Die Addition ");
+            Console.WriteLine("basiert auf dem Vorgang des Zählens. Deshalb verwendet man für den Vorgang,");
+            Console.WriteLine(" eine Addition auszuführen, neben Addieren auch den Ausdruck Zusammenzählen. ");
+            Console.WriteLine("Das Rechenzeichen für die Addition ist das Pluszeichen „+“. ");
+            Console.WriteLine("Es wurde 1489 von Johannes Widmann eingeführt. Die Addition bildet zusammen ");
+            Console.WriteLine("mit der Subtraktion die Rechenart 1. Stufe, wegen der Rechenzeichen + und - auch Strichrechnung genannt");
+               
         }
     }
 }

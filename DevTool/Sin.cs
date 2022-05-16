@@ -27,7 +27,12 @@ namespace DevTool
 
         public  void Definition()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Sinus- und Kosinusfunktion sind elementare mathematische Funktionen. ");
+            Console.WriteLine("Vor Tangens und Kotangens, Sekans und Kosekans bilden sie die wichtigsten trigonometrischen Funktionen. ");
+            Console.WriteLine("Sinus und Kosinus werden unter anderem in der Geometrie für Dreiecksberechnungen in der ebenen ");
+            Console.WriteLine("und sphärischen Trigonometrie benötigt. Der Sinus eines Winkels ist das Verhältnis ");
+            Console.WriteLine("der Länge der Gegenkathete (Kathete, die dem Winkel gegenüberliegt) ");
+            Console.WriteLine("zur Länge der Hypotenuse (Seite gegenüber dem rechten Winkel).");
         }
     }
 }

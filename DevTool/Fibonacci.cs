@@ -36,7 +36,7 @@ namespace DevTool
 
         public  void Definition()
         {
-            throw new NotImplementedException();
+            Console.WriteLine();
         }
     }
 }

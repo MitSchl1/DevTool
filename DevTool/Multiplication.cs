@@ -17,7 +17,9 @@ namespace DevTool
 
         public  void Definition()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Die Multiplikation (lateinisch multiplicatio, von multiplicare ‚vervielfachen‘, auch Malnehmen genannt) ");
+            Console.WriteLine("ist eine der vier Grundrechenarten in der Arithmetik. Ihre Umkehroperation ist die Division (das Teilen). ");
+            Console.WriteLine("Das Rechenzeichen für die Multiplikation ist das Malzeichen „·“ bzw. „×“");
         }
     }
 }
