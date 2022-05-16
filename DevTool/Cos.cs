@@ -9,23 +9,23 @@ namespace DevTool
     internal class Cos : IAdvancedCalculation
     {
         private double result;
-        public  void CalcWithOnePassedValue(float numberOne)
+        public  double CalcWithOnePassedValue(double numberOne)
         {
             result = Math.Cos(numberOne);
-            Console.WriteLine(result);
+            return result;
         }
 
-        public  void CalcWithoutPassedValues()
+        public void CalcWithoutPassedValues()
         {
             throw new NotImplementedException();
         }
 
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             throw new NotImplementedException();
         }
 
-        public  void Definition()
+        public void Definition()
         {
             throw new NotImplementedException();
         }

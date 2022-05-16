@@ -9,10 +9,10 @@ namespace DevTool
     internal class Log : IAdvancedCalculation
     {
         private double result;
-        public  void CalcWithOnePassedValue(float numberOne)
+        public double CalcWithOnePassedValue(double numberOne)
         {
             result = Math.Log(numberOne);
-            Console.WriteLine(" Der Basis e Log fuer " + numberOne + " ist " + result);
+            return result;
         }
 
         public  void CalcWithoutPassedValues()
@@ -20,10 +20,10 @@ namespace DevTool
             throw new NotImplementedException();
         }
 
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             result = Math.Log(numberOne,numberTwo);
-            Console.WriteLine(" Der Basis "+ numberTwo + " Log fuer " + numberOne + " ist " + result);
+            return result;
         }
 
         public  void Definition()

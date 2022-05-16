@@ -11,7 +11,7 @@ namespace DevTool
         private int result;
         private int numberOneFib = 1;
         private int numberTwoFib = 0;
-        public  void CalcWithoutPassedValues()
+        public void CalcWithoutPassedValues()
         {
             for (int x = 1; x < 20; x++)
             {
@@ -24,12 +24,12 @@ namespace DevTool
           
         }
 
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             throw new NotImplementedException();
         }
 
-        public  void CalcWithOnePassedValue(float numberOne)
+        public double CalcWithOnePassedValue(double numberOne)
         {
             throw new NotImplementedException();
         }

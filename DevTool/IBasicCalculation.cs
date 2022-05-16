@@ -8,7 +8,7 @@ namespace DevTool
 {
     internal interface IBasicCalculation
     {
-         void CalcWithTwoPassedValues(float numberOne, float numberTwo);
+         double CalcWithTwoPassedValues(double numberOne, double numberTwo);
          void Definition();
     }
 }

@@ -15,33 +15,33 @@ namespace DevTool
         private Log10 log10 = new ();  
         private Log2 log2 = new ();
 
-        public void SinCalc(float numberOne)
+        public double SinCalc(double numberOne)
         {
-            sin.CalcWithOnePassedValue(numberOne);
+           return sin.CalcWithOnePassedValue(numberOne);
         }
-        public void CosCalc(float numberOne)
+        public double CosCalc(double numberOne)
         {
-            cos.CalcWithOnePassedValue(numberOne);
+            return cos.CalcWithOnePassedValue(numberOne);
         }
-        public void TanCalc(float numberOne)
+        public double TanCalc(double numberOne)
         {
-            tan.CalcWithOnePassedValue(numberOne);
+            return tan.CalcWithOnePassedValue(numberOne);
         }
-        public void Log10Calc(float numberOne)
+        public double Log10Calc(double numberOne)
         {
-            log10.CalcWithOnePassedValue(numberOne);
+            return log10.CalcWithOnePassedValue(numberOne);
         }
-        public void Log2Calc(float numberOne)
+        public double Log2Calc(double numberOne)
         {
-            log2.CalcWithOnePassedValue(numberOne);
+            return log2.CalcWithOnePassedValue(numberOne);
         }
-        public void LogECalc(float numberOne)
+        public double LogECalc(double numberOne)
         {
-            log.CalcWithOnePassedValue(numberOne);
+            return log.CalcWithOnePassedValue(numberOne);
         }
-        public void LogCalcToAnyBase(float numberOne, float numberTwo)
+        public double LogCalcToAnyBase(double numberOne, double numberTwo)
         {
-            log.CalcWithTwoPassedValues(numberOne, numberTwo);
+            return log.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
     }
 }

@@ -8,12 +8,12 @@ namespace DevTool
 {
     internal class Division : IBasicCalculation
     {
-        private float result;
+        private double result;
 
-        public void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             result = numberOne / numberTwo;
-            Console.WriteLine(result);
+            return result;
         }
 
         public  void Definition()

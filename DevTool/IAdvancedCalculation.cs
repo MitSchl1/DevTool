@@ -9,9 +9,9 @@ namespace DevTool
     public interface IAdvancedCalculation
     {
         void Definition();
-        void CalcWithTwoPassedValues(float numberOne, float numberTwo);
+        double CalcWithTwoPassedValues(double numberOne, double numberTwo);
 
         void CalcWithoutPassedValues();
-        void CalcWithOnePassedValue(float numberOne);
+        double CalcWithOnePassedValue(double numberOne);
     }
 }

@@ -9,10 +9,10 @@ namespace DevTool
     internal class Sin : IAdvancedCalculation
     {
         private double result;
-        public  void CalcWithOnePassedValue(float numberOne)
+        public double CalcWithOnePassedValue(double numberOne)
         {
             result = Math.Sin(numberOne);
-            Console.WriteLine(result);
+            return result;
         }
 
         public  void CalcWithoutPassedValues()
@@ -20,7 +20,7 @@ namespace DevTool
             throw new NotImplementedException();
         }
 
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             throw new NotImplementedException();
         }

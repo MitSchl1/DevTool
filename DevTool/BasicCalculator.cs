@@ -8,25 +8,29 @@ namespace DevTool
 {
     public class BasicCalculator 
     {
-        public void addCalc(float numberOne, float numberTwo)
+        private Addition add = new();
+        private Substraction sub = new();
+        private Multiplication mult = new();
+        private Division div = new();
+
+
+
+
+        public double addCalc(double numberOne, double numberTwo)
         {
-            Addition add = new();
-            add.CalcWithTwoPassedValues( numberOne, numberTwo);
+            return add.CalcWithTwoPassedValues( numberOne, numberTwo);
         }
-        public void subCalc(float numberOne, float numberTwo)
+        public double subCalc(double numberOne, double numberTwo)
         {
-            Substraction sub = new();
-            sub.CalcWithTwoPassedValues(numberOne, numberTwo);
+           return  sub.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public void multCalc(float numberOne, float numberTwo)
+        public double multCalc(double numberOne, double numberTwo)
         {
-            Multiplication mult = new();
-            mult.CalcWithTwoPassedValues(numberOne, numberTwo);
+            return mult.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public void divCalc(float numberOne, float numberTwo)
+        public double divCalc(double numberOne, double numberTwo)
         {
-            Division div = new();
-            div.CalcWithTwoPassedValues(numberOne, numberTwo);
+            return div.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
     }
 }

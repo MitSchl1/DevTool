@@ -10,7 +10,7 @@ namespace DevTool
             AdvancedCalculator advancedCalculator = new ();
 
             bool userNotFinished = true;
-            float[] userNumbers = new float[2];
+            double[] userNumbers = new double[2];
 
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
             while (userNotFinished)
@@ -33,20 +33,20 @@ namespace DevTool
                                 break;
                             case 1:
                                 userNumbers = userNumbersforBasicCalc();
-                                advancedCalculator.addCalc(userNumbers[0], userNumbers[1]);
+                                Console.WriteLine( "Das Ergebnis von " +userNumbers[0] + " + " + userNumbers[1] + " ist " + advancedCalculator.addCalc(userNumbers[0], userNumbers[1]));
         
                                 break;
                             case 2:
                                 userNumbers = userNumbersforBasicCalc();
-                                advancedCalculator.subCalc(userNumbers[0], userNumbers[1]);
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " - " + userNumbers[1] + " ist " + advancedCalculator.subCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 3:
                                 userNumbers = userNumbersforBasicCalc();
-                                advancedCalculator.multCalc(userNumbers[0], userNumbers[1]);
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " * " + userNumbers[1] + " ist " + advancedCalculator.multCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 4:
                                 userNumbers = userNumbersforBasicCalc();
-                                advancedCalculator.divCalc(userNumbers[0], userNumbers[1]);
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " / " + userNumbers[1] + " ist " + advancedCalculator.divCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             default:
                                 Console.WriteLine("nicht vorhanden");
@@ -63,9 +63,9 @@ namespace DevTool
 
             }
         }
- static float[] userNumbersforBasicCalc()
+ static double[] userNumbersforBasicCalc()
 {
-    float[] userNumbers = new float[2];
+    double[] userNumbers = new double[2];
     Console.WriteLine("Bitte erste Zahl eingeben");
     int firstNumber = int.Parse(Console.ReadLine());
     Console.WriteLine("Bitte zweite Zahl eingeben");

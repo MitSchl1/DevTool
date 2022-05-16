@@ -8,11 +8,11 @@ namespace DevTool
 {
     internal class Substraction : IBasicCalculation
     {
-        private float result;
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        private double result;
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             result = numberOne - numberTwo;
-            Console.WriteLine(result);
+            return result;
         }
 
         public  void Definition()

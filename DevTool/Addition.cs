@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Addition : IBasicCalculation
+    public class Addition : IBasicCalculation
 
     {
-        private float result;
-        public  void CalcWithTwoPassedValues(float numberOne, float numberTwo)
+        private double result;
+        public double CalcWithTwoPassedValues(double numberOne, double numberTwo)
         {
             result = numberOne + numberTwo;
-            Console.WriteLine(result);
+            return result;
         }
 
         public void Definition()
