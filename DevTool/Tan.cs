@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Tan : IAdvancedCalculation
+    public class Tan : IAdvancedCalculation
     {
         private double result;
         public double CalcWithOnePassedValue(double numberOne)

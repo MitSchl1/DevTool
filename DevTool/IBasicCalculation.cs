@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal interface IBasicCalculation
+    public interface IBasicCalculation
     {
          double CalcWithTwoPassedValues(double numberOne, double numberTwo);
          void Definition();

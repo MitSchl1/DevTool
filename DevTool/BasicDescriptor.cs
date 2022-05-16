@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class BasicDescriptor
+    public class BasicDescriptor
     {
         private Addition add = new();
         private Substraction sub = new();

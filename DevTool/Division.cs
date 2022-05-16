@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Division : IBasicCalculation
+    public class Division : IBasicCalculation
     {
         private double result;
 

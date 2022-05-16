@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class AdvancedDescriptor : BasicDescriptor
+    public class AdvancedDescriptor : BasicDescriptor
     {
         private Sin sin = new();
         private Cos cos = new();

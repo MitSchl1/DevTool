@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class AddDataDB
+    public class AddDataDB
     {
         public void addData()
         {

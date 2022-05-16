@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Substraction : IBasicCalculation
+    public class Substraction : IBasicCalculation
     {
         private double result;
         public double CalcWithTwoPassedValues(double numberOne, double numberTwo)

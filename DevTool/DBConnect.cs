@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class DBConnect
+    public class DBConnect
     {
         public void Connect()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    internal class Cos : IAdvancedCalculation
+    public class Cos : IAdvancedCalculation
     {
         private double result;
         public  double CalcWithOnePassedValue(double numberOne)
