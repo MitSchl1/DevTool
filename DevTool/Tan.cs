@@ -31,6 +31,7 @@ namespace DevTool
             Console.WriteLine("und spielen in der Mathematik und ihren Anwendungsgebieten eine herausragende Rolle. ");
             Console.WriteLine("Der Tangens des Winkels x wird mit tan x bezeichnet, der Kotangens des Winkels x mit cot x . ");
             Console.WriteLine("In älterer Literatur findet man auch die Schreibweisen tg x für den Tangens und ctg x für den Kotangens");
+
         }
 
         public void FibonacciSeries()
