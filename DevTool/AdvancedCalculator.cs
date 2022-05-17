@@ -92,17 +92,17 @@ namespace DevTool
         {
             return log.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public double SqrtCalc(double numberOne, double numberTwo)
+        public double SqrtCalc(double numberOne)
         {
-            return sqrt.CalcWithTwoPassedValues(numberOne, numberTwo);
+            return sqrt.CalcWithOnePassedValue(numberOne);
         }
         public double PowCalc(double numberOne, double numberTwo)
         {
             return pow.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public double ExpCalc(double numberOne, double numberTwo)
+        public double ExpCalc(double numberOne)
         {
-            return exp.CalcWithTwoPassedValues(numberOne, numberTwo);
+            return exp.CalcWithOnePassedValue(numberOne);
         }
     }
 }

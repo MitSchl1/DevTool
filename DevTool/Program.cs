@@ -8,13 +8,21 @@ namespace DevTool
         static void Main(string[] args)
         {
             AdvancedCalculator advancedCalculator = new();
-            AdvancedDescriptor advancedDescriptor = new ();
+            AdvancedDescriptor advancedDescriptor = new();
 
             bool userNotFinished = true;
             double[] userNumbers = new double[2];
             double userNumber;
 
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
+            Console.WriteLine("Das DevTool besteht aus einem Taschenrechner, einem Descriptor und weiteren Werkzeugen. " );
+        Console.WriteLine("Der Taschenrechner beherrscht die vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division " );
+        Console.WriteLine("sowie Trigonomische und Logarithmische Funktionen. " );
+            Console.WriteLine("Der Descriptor ist zum beschreiben der Mathematischen Operationen zuständig. ");
+            Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
+            Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
+
+
             while (userNotFinished)
             {
                 Console.WriteLine("0 fuer Anwendung beenden");
@@ -37,7 +45,6 @@ namespace DevTool
                             case 1:
                                 userNumbers = userNumbersforBasicCalc();
                                 Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " + " + userNumbers[1] + " ist " + advancedCalculator.addCalc(userNumbers[0], userNumbers[1]));
-
                                 break;
                             case 2:
                                 userNumbers = userNumbersforBasicCalc();
@@ -88,6 +95,65 @@ namespace DevTool
                                 double logBase = double.Parse(Console.ReadLine());
                                 Console.WriteLine("Der Logarithmus zur Basis " + logBase + " von " + userNumber + " ist " + advancedCalculator.LogCalcToAnyBase(userNumber, logBase));
                                 break;
+                            case 12:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der ASinus berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der ASinus von " + userNumber + " ist " + advancedCalculator.AsinCalc(userNumber));
+                                break;
+                            case 13:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der AKosinus berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der AKosinus von " + userNumber + " ist " + advancedCalculator.AcosCalc(userNumber));
+                                break;
+                            case 14:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der ATangens berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der ATangens von " + userNumber + " ist " + advancedCalculator.AtanCalc(userNumber));
+                                break;
+                            case 15:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der SinusH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der SinusH von " + userNumber + " ist " + advancedCalculator.SinhCalc(userNumber));
+                                break;
+                            case 16:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der CosinusH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der CosinusH von " + userNumber + " ist " + advancedCalculator.CoshCalc(userNumber));
+                                break;
+                            case 17:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der TangensH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der TangensH von " + userNumber + " ist " + advancedCalculator.TanhCalc(userNumber));
+                                break;
+                            case 18:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der ASinusH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der ASinusH von " + userNumber + " ist " + advancedCalculator.AsinhCalc(userNumber));
+                                break;
+                            case 19:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der AKosinusH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der AKosinusH von " + userNumber + " ist " + advancedCalculator.AcosHCalc(userNumber));
+                                break;
+                            case 20:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher der ATangensH berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Der ATangensH von " + userNumber + " ist " + advancedCalculator.AtanhCalc(userNumber));
+                                break;
+                            case 21:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher die Wurzel berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("Die Wurzel von " + userNumber + " ist " + advancedCalculator.SqrtCalc(userNumber));
+                                break;
+                            case 22:
+                                Console.WriteLine("Bitte die Zahl eingeben von welcher die Wurzel berechnet werden soll");
+                                userNumber = double.Parse(Console.ReadLine());
+                                Console.WriteLine("e hoch " + userNumber + " ist " + advancedCalculator.ExpCalc(userNumber));
+                                break;
+                            case 23:
+                                userNumbers = userNumbersforBasicCalc();
+                                Console.WriteLine("Die Potenz von " + userNumbers[0] + " hoch " + userNumbers[1] + " ist " + advancedCalculator.PowCalc(userNumbers[0], userNumbers[1]));
+                                break;
                             default:
                                 Console.WriteLine("nicht vorhanden");
                                 break;
@@ -133,6 +199,43 @@ namespace DevTool
                             case 11:
                                 advancedDescriptor.LogDescription();
                                 break;
+
+                            case 12:
+                                advancedDescriptor.AsinDescription();
+                                break;
+                            case 13:
+                                advancedDescriptor.AcosDescription();
+                                break;
+                            case 14:
+                                advancedDescriptor.AtanDescription();
+                                break;
+                            case 15:
+                                advancedDescriptor.SinhDescription();
+                                break;
+                            case 16:
+                                advancedDescriptor.CoshDescription();
+                                break;
+                            case 17:
+                                advancedDescriptor.TanhDescription();
+                                break;
+                            case 18:
+                                advancedDescriptor.AsinhDescription();
+                                break;
+                            case 19:
+                                advancedDescriptor.AcoshDescription();
+                                break;
+                            case 20:
+                                advancedDescriptor.AtanhDescription();
+                                break;
+                            case 21:
+                                advancedDescriptor.SqrtDescription();
+                                break;
+                            case 22:
+                                advancedDescriptor.ExpDescription();
+                                break;
+                            case 23:
+                                advancedDescriptor.PowDescription();
+                                break;
                             default:
                                 Console.WriteLine("nicht vorhanden");
                                 break;
@@ -176,7 +279,18 @@ namespace DevTool
             Console.WriteLine("9 fuer Logarithmus zur Basis 10");
             Console.WriteLine("10 fuer Logarithmus zur Basis E");
             Console.WriteLine("11 fuer Logarithmus zu einer beliebigen Basis");
-
+            Console.WriteLine("12 fuer ASinus");
+            Console.WriteLine("13 fuer ACosinus");
+            Console.WriteLine("14 fuer ATangens");
+            Console.WriteLine("15 fuer SinusH");
+            Console.WriteLine("16 fuer CosinusH");
+            Console.WriteLine("17 fuer TangensH");
+            Console.WriteLine("18 fuer ASinusH");
+            Console.WriteLine("19 fuer ACosinusH");
+            Console.WriteLine("20 fuer ATangensH");
+            Console.WriteLine("21 fuer Wurzel");
+            Console.WriteLine("22 fuer Exponent");
+            Console.WriteLine("23 fuer Potenz");
         }
 
     }
