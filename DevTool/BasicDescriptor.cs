@@ -6,26 +6,29 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    public class BasicDescriptor
+    public class BasicDescriptor : AbstractBasicDescriptor
     {
         private Addition add = new();
         private Substraction sub = new();
         private Multiplication mult = new();
         private Division div = new();
 
-        public void AddDescription()
+        public override void AddDescription()
         {
             add.Definition();
         }
-        public void SubDescription()
+  
+        public override void SubDescription()
         {
             sub.Definition();
         }
-        public void MultDescription()
+
+        public override void MultDescription()
         {
             mult.Definition();
         }
-        public void DivDescription()
+
+        public override void DivDescription()
         {
             div.Definition();
         }

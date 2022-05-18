@@ -16,8 +16,8 @@ namespace DevTool
 
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
             Console.WriteLine("Das DevTool besteht aus einem Taschenrechner, einem Descriptor und weiteren Werkzeugen. " );
-        Console.WriteLine("Der Taschenrechner beherrscht die vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division " );
-        Console.WriteLine("sowie Trigonomische und Logarithmische Funktionen. " );
+            Console.WriteLine("Der Taschenrechner beherrscht die vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division " );
+            Console.WriteLine("sowie Trigonomische und Logarithmische Funktionen. " );
             Console.WriteLine("Der Descriptor ist zum beschreiben der Mathematischen Operationen zuständig. ");
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
