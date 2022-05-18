@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DevTool
 {
-    public class AdvancedCalculator : BasicCalculator
+    public class AdvancedCalculator 
     {
+        private Addition add = new();
+        private Substraction sub = new();
+        private Multiplication mult = new();
+        private Division div = new();
+
         private Sin sin = new();
         private Cos cos = new();
         private Tan tan = new ();
@@ -26,6 +31,24 @@ namespace DevTool
         private Sqrt sqrt = new();
         private Exp exp = new();
         private Pow pow = new();
+
+
+        public double addCalc(double numberOne, double numberTwo)
+        {
+            return add.CalcWithTwoPassedValues(numberOne, numberTwo);
+        }
+        public double subCalc(double numberOne, double numberTwo)
+        {
+            return sub.CalcWithTwoPassedValues(numberOne, numberTwo);
+        }
+        public double multCalc(double numberOne, double numberTwo)
+        {
+            return mult.CalcWithTwoPassedValues(numberOne, numberTwo);
+        }
+        public double divCalc(double numberOne, double numberTwo)
+        {
+            return div.CalcWithTwoPassedValues(numberOne, numberTwo);
+        }
 
 
         public double SinCalc(double numberOne)
