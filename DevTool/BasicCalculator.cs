@@ -16,19 +16,19 @@ namespace DevTool
 
 
 
-        public double addCalc(double numberOne, double numberTwo)
+        public double AddCalc(double numberOne, double numberTwo)
         {
             return add.CalcWithTwoPassedValues( numberOne, numberTwo);
         }
-        public double subCalc(double numberOne, double numberTwo)
+        public double SubCalc(double numberOne, double numberTwo)
         {
            return  sub.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public double multCalc(double numberOne, double numberTwo)
+        public double MultCalc(double numberOne, double numberTwo)
         {
             return mult.CalcWithTwoPassedValues(numberOne, numberTwo);
         }
-        public double divCalc(double numberOne, double numberTwo)
+        public double DivCalc(double numberOne, double numberTwo)
         {
             return div.CalcWithTwoPassedValues(numberOne, numberTwo);
         }

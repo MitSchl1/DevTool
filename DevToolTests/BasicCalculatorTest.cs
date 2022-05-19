@@ -7,56 +7,70 @@ namespace DevToolTests
     {
         BasicCalculator basicCalculator = new();
         
-        [Fact]
-        public void Addition_Test()
-        {
-            //Act
-            double actual = basicCalculator.addCalc(2, 2);
+        [Theory]
+        [InlineData(2,2,4)]
+        [InlineData(3, 3, 6)]
+        [InlineData(4, 4, 8)]
 
+        public void Addition_Theory(double numberOne, double numberTwo, double numberThree)
+        {
             //Arrange
-            double expected = 4;    
+            double expected = numberThree;
+
+            //Act
+            double actual = basicCalculator.AddCalc(numberOne, numberTwo);
+   
+            //Assert
+
+            Assert.Equal(expected, actual);
+
+        }
+        [Theory]
+        [InlineData(2, 2, 0)]
+        [InlineData(3, 3, 0)]
+        [InlineData(4, 4, 0)]
+        public void Subtraction_Theory(double numberOne, double numberTwo, double numberThree)
+        {
+            //Arrange
+            double expected = numberThree;
+
+            //Act
+            double actual = basicCalculator.SubCalc(numberOne, numberTwo);
+
 
             //Assert
 
             Assert.Equal(expected, actual);
 
         }
-        [Fact]
-        public void Subtraction_Test()
+        [Theory]
+        [InlineData(2, 2, 4)]
+        [InlineData(3, 3, 9)]
+        [InlineData(4, 4, 16)]
+        public void Multiplication_Theory(double numberOne, double numberTwo, double numberThree)
         {
-            //Act
-            double actual = basicCalculator.subCalc(2, 5);
-
             //Arrange
-            double expected = -3;
+            double expected = numberThree;
+
+            //Act
+            double actual = basicCalculator.MultCalc(numberOne, numberTwo);
 
             //Assert
 
             Assert.Equal(expected, actual);
 
         }
-        [Fact]
-        public void Multiplication_Test()
+        [Theory]
+        [InlineData(2, 2, 1)]
+        [InlineData(3, 3, 1)]
+        [InlineData(4, 4, 1)]
+        public void Division_Theory(double numberOne, double numberTwo, double numberThree)
         {
-            //Act
-            double actual = basicCalculator.multCalc(2, 3);
-
             //Arrange
-            double expected = 6;
+            double expected = numberThree;
 
-            //Assert
-
-            Assert.Equal(expected, actual);
-
-        }
-        [Fact]
-        public void Division_Test()
-        {
             //Act
-            double actual = basicCalculator.divCalc(2, 2);
-
-            //Arrange
-            double expected = 1;
+            double actual = basicCalculator.DivCalc(numberOne, numberTwo);
 
             //Assert
 

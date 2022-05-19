@@ -10,7 +10,7 @@ namespace DevToolTests
         public void Addition_Test()
         {
             //Act
-            double actual = advancedCalculator.addCalc(2, 2);
+            double actual = advancedCalculator.AddCalc(2, 2);
 
             //Arrange
             double expected = 4;
@@ -24,7 +24,7 @@ namespace DevToolTests
         public void Subtraction_Test()
         {
             //Act
-            double actual = advancedCalculator.subCalc(2, 5);
+            double actual = advancedCalculator.SubCalc(2, 5);
 
             //Arrange
             double expected = -3;
@@ -38,7 +38,7 @@ namespace DevToolTests
         public void Multiplication_Test()
         {
             //Act
-            double actual = advancedCalculator.multCalc(2, 3);
+            double actual = advancedCalculator.MultCalc(2, 3);
 
             //Arrange
             double expected = 6;
@@ -52,7 +52,7 @@ namespace DevToolTests
         public void Division_Test()
         {
             //Act
-            double actual = advancedCalculator.divCalc(2, 2);
+            double actual = advancedCalculator.DivCalc(2, 2);
 
             //Arrange
             double expected = 1;

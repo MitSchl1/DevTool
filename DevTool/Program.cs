@@ -44,19 +44,19 @@ namespace DevTool
                                 break;
                             case 1:
                                 userNumbers = userNumbersforBasicCalc();
-                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " + " + userNumbers[1] + " ist " + advancedCalculator.addCalc(userNumbers[0], userNumbers[1]));
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " + " + userNumbers[1] + " ist " + advancedCalculator.AddCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 2:
                                 userNumbers = userNumbersforBasicCalc();
-                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " - " + userNumbers[1] + " ist " + advancedCalculator.subCalc(userNumbers[0], userNumbers[1]));
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " - " + userNumbers[1] + " ist " + advancedCalculator.SubCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 3:
                                 userNumbers = userNumbersforBasicCalc();
-                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " * " + userNumbers[1] + " ist " + advancedCalculator.multCalc(userNumbers[0], userNumbers[1]));
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " * " + userNumbers[1] + " ist " + advancedCalculator.MultCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 4:
                                 userNumbers = userNumbersforBasicCalc();
-                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " / " + userNumbers[1] + " ist " + advancedCalculator.divCalc(userNumbers[0], userNumbers[1]));
+                                Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " / " + userNumbers[1] + " ist " + advancedCalculator.DivCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 5:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Sinus berechnet werden soll");
