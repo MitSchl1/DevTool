@@ -9,7 +9,6 @@ namespace DevTool
     public class NumberConverter
     {
 
-
         public string ConvertDecToBin(int number)
         {
             string binNumber = string.Empty;
@@ -106,48 +105,6 @@ namespace DevTool
                 binNumber = remainder.ToString() + binNumber;
             }
             return binNumber;
-        }
-
-
-        public void ConvertDecToBinDescription()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ConvertDecToTernDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToQuaternDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToQuinDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToSenDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToSeptenDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToOktalDescription()
-        {
-            throw new NotImplementedException();
-
-        }
-        public string ConvertDecToNonDescription()
-        {
-            throw new NotImplementedException();
-
         }
 
     }
