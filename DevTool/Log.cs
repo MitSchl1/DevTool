@@ -39,6 +39,7 @@ namespace DevTool
             Console.WriteLine("Auch beschreiben Logarithmen auf mathematisch elegante Weise viele technische Prozesse sowie Phänomene der Natur ");
             Console.WriteLine("wie etwa das Verhalten einer Halbleiter-Diode, die Spirale eines Schneckenhauses ");
             Console.WriteLine("oder die Wahrnehmung unterschiedlicher Lautstärken durch das menschliche Ohr.");
+            Console.WriteLine(" Log gibt den Logarithmus der angegebenen Zahl zur Basis e oder zu einer angegebenen Zahl bezüglich einer angegebenen Basis zurück.");
         }
     }
 }
