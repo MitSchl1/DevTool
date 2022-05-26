@@ -9,17 +9,19 @@ namespace DevTool
         {
             AdvancedCalculator advancedCalculator = new();
             AdvancedDescriptor advancedDescriptor = new();
+            NumberConverter numberConverter = new ();
 
             bool userNotFinished = true;
             double[] userNumbers = new double[2];
             double userNumber;
+            int userNumberForConvertation;
 
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
-            Console.WriteLine("Das DevTool besteht aus einem Taschenrechner, einem Descriptor und weiteren Werkzeugen. " );
+            Console.WriteLine("Das DevTool besteht aus einem Taschenrechner, einem Descriptor und einem Zahlenkonverter. " );
             Console.WriteLine("Der Taschenrechner beherrscht die vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division " );
             Console.WriteLine("sowie Trigonomische und Logarithmische Funktionen. " );
+            Console.WriteLine("Der Zahlenkonverter, konvertiert Zahlen vom Dezimalsystem in ein anderes Zahlensystem ");
             Console.WriteLine("Der Descriptor ist zum beschreiben der Mathematischen Operationen zuständig. ");
-            Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
             Console.WriteLine("Hallo und herzlich Willkommen beim DevTool");
 
 
@@ -28,7 +30,7 @@ namespace DevTool
                 Console.WriteLine("0 fuer Anwendung beenden");
                 Console.WriteLine("1 fuer etwas Berechnen");
                 Console.WriteLine("2 fuer eine Rechnung erklären lassen");
-                Console.WriteLine("3 um weitere Tools anzuzeigen");
+                Console.WriteLine("3 um eine Zahl zu konvertieren");
                 int userinput = int.Parse(Console.ReadLine());
                 switch (userinput)
                 {
@@ -36,26 +38,26 @@ namespace DevTool
                         userNotFinished = false;
                         break;
                     case 1:
-                        calculationPosisibilities();
+                        CalculationPosisibilities();
                         int whichCalcProcess = int.Parse(Console.ReadLine());
                         switch (whichCalcProcess)
                         {
                             case 0:
                                 break;
                             case 1:
-                                userNumbers = userNumbersforBasicCalc();
+                                userNumbers = UserNumbersforBasicCalc();
                                 Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " + " + userNumbers[1] + " ist " + advancedCalculator.AddCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 2:
-                                userNumbers = userNumbersforBasicCalc();
+                                userNumbers = UserNumbersforBasicCalc();
                                 Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " - " + userNumbers[1] + " ist " + advancedCalculator.SubCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 3:
-                                userNumbers = userNumbersforBasicCalc();
+                                userNumbers = UserNumbersforBasicCalc();
                                 Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " * " + userNumbers[1] + " ist " + advancedCalculator.MultCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 4:
-                                userNumbers = userNumbersforBasicCalc();
+                                userNumbers = UserNumbersforBasicCalc();
                                 Console.WriteLine("Das Ergebnis von " + userNumbers[0] + " / " + userNumbers[1] + " ist " + advancedCalculator.DivCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             case 5:
@@ -151,7 +153,7 @@ namespace DevTool
                                 Console.WriteLine("e hoch " + userNumber + " ist " + advancedCalculator.ExpCalc(userNumber));
                                 break;
                             case 23:
-                                userNumbers = userNumbersforBasicCalc();
+                                userNumbers = UserNumbersforBasicCalc();
                                 Console.WriteLine("Die Potenz von " + userNumbers[0] + " hoch " + userNumbers[1] + " ist " + advancedCalculator.PowCalc(userNumbers[0], userNumbers[1]));
                                 break;
                             default:
@@ -160,7 +162,7 @@ namespace DevTool
                         }
                         break;
                     case 2:
-                        calculationPosisibilities();
+                        CalculationPosisibilities();
                         int whichDescription = int.Parse(Console.ReadLine());
                         switch (whichDescription)
                         {
@@ -242,7 +244,56 @@ namespace DevTool
                         }
                         break;
                     case 3:
-                        Console.WriteLine("Derzeit nicht verfügbar");
+                        ConvertPosisibilities();
+                        int whichConvertation = int.Parse(Console.ReadLine());
+                        switch (whichConvertation)
+                        {
+                            case 0:
+                                break;
+                            case 2:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Binaersystem ist: " + numberConverter.ConvertDecToBin(userNumberForConvertation));
+                                break; 
+                            case 3:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Ternaersystem ist: " + numberConverter.ConvertDecToTern(userNumberForConvertation));
+                                break;
+                            case 4:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Quatenaersystem ist: " + numberConverter.ConvertDecToQuatern(userNumberForConvertation));
+                                break;
+                            case 5:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Quinaersystem ist: " + numberConverter.ConvertDecToQuin(userNumberForConvertation));
+                                break;
+                            case 6:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Senaersystem ist: " + numberConverter.ConvertDecToSen(userNumberForConvertation));
+                                break;
+                            case 7:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Septenaersystem ist: " + numberConverter.ConvertDecToSepten(userNumberForConvertation));
+                                break;
+                            case 8:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Oktalsystem ist: " + numberConverter.ConvertDecToOktal(userNumberForConvertation));
+                                break;
+                            case 9:
+                                Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
+                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                Console.WriteLine(userNumberForConvertation + " im Nonaersystem ist: " + numberConverter.ConvertDecToNon(userNumberForConvertation));
+                                break;
+                            default:
+                                Console.WriteLine("nicht vorhanden");
+                                break;
+                        }
                         break;
                     default:
                         Console.WriteLine("Bitte eine Zahl zwischen 0 und 2 eingeben");
@@ -251,7 +302,7 @@ namespace DevTool
 
             }
         }
-        static double[] userNumbersforBasicCalc()
+        static double[] UserNumbersforBasicCalc()
         {
             double[] userNumbers = new double[2];
             Console.WriteLine("Bitte erste Zahl eingeben");
@@ -265,7 +316,7 @@ namespace DevTool
             return userNumbers;
         }
 
-        static void calculationPosisibilities()
+        static void CalculationPosisibilities()
         {
             Console.WriteLine("0 fuer zurueck zum Menu");
             Console.WriteLine("1 fuer Addition");
@@ -292,6 +343,17 @@ namespace DevTool
             Console.WriteLine("22 fuer Exponent");
             Console.WriteLine("23 fuer Potenz");
         }
-
+        static void ConvertPosisibilities()
+        {
+            Console.WriteLine("0 fuer zurueck zum Menu");
+            Console.WriteLine("2 fuer Dezimal in Binaer");
+            Console.WriteLine("3 fuer Dezimal in Ternaer");
+            Console.WriteLine("4 fuer Dezimal in Quatenaer");
+            Console.WriteLine("5 fuer Dezimal in Quniaer");
+            Console.WriteLine("6 fuer Dezimal in Senaer");
+            Console.WriteLine("7 fuer Dezimal in Septenaer");
+            Console.WriteLine("8 fuer Dezimal in Oktal");
+            Console.WriteLine("9 fuer Dezimal in Nonaer");
+        }
     }
 }
