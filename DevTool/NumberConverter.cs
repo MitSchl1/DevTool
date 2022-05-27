@@ -9,25 +9,26 @@ namespace DevTool
     public class NumberConverter
     {
 
-        private string convertedNumber = string.Empty;
-        private int remainder;
 
         public string ConvertFromDecimalsystemToBinaersystem(int number)
         {
-             convertedNumber = string.Empty;
-
+            /*string  convertedNumber = string.Empty;
+            int remainder;
             while (number > 0)
             {
                 remainder = number % 2;
                 number /= 2;
                 convertedNumber = remainder.ToString() + convertedNumber;
             }
-            return convertedNumber;
+            return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 2);
+
         }
 
         public string ConvertFromDecimalsystemToTernaersystem(int number)
         {
-             convertedNumber = string.Empty;
+            /*string convertedNumber = string.Empty;
+            int remainder;
 
             while (number > 0)
             {
@@ -35,67 +36,79 @@ namespace DevTool
                 number /= 3;
                 convertedNumber = remainder.ToString() + convertedNumber;
             }
-            return convertedNumber;
+            return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 3);
+
         }
         public string ConvertFromDecimalsystemToQuatenaersystem(int number)
         {
-             convertedNumber = string.Empty;
-
+            /*string convertedNumber = string.Empty;
+            int remainder;
             while (number > 0)
             {
                 remainder = number % 4;
                 number /= 4;
                 convertedNumber = remainder.ToString() + convertedNumber;
             }
-            return convertedNumber;
+            return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 4);
+
         }
         public string ConvertFromDecimalsystemToQuinaersystem(int number)
         {
-             convertedNumber = string.Empty;
-
+            /*string convertedNumber = string.Empty;
+            int remainder;
             while (number > 0)
             {
                 remainder = number % 5;
                 number /= 5;
                 convertedNumber = remainder.ToString() + convertedNumber;
             }
-            return convertedNumber;
+            return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 5);
+
         }
         public string ConvertFromDecimalsystemToSenaersystem(int number)
         {
-             convertedNumber = string.Empty;
-
+            /*string convertedNumber = string.Empty;
+            int remainder;
             while (number > 0)
             {
                 remainder = number % 6;
                 number /= 6;
                 convertedNumber = remainder.ToString() + convertedNumber;
             }
-            return convertedNumber;
+            return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 6);
+
         }
         public string ConvertFromDecimalsystemToSeptenaersystem(int number)
         {
-             convertedNumber = string.Empty;
+            /* string convertedNumber = string.Empty;
+             int remainder;
+             while (number > 0)
+             {
+                 remainder = number % 7;
+                 number /= 7;
+                 convertedNumber = remainder.ToString() + convertedNumber;
+             }
+             return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 7);
 
-            while (number > 0)
-            {
-                remainder = number % 7;
-                number /= 7;
-                convertedNumber = remainder.ToString() + convertedNumber;
-            }
-            return convertedNumber;
         }
         public string ConvertFromDecimalsystemToOktalsystem(int number)
         {
-             convertedNumber = string.Empty;
+            /* string convertedNumber = string.Empty;
+             int remainder;
+             while (number > 0)
+             {
+                 remainder = number % 8;
+                 number /= 8;
+                 convertedNumber = remainder.ToString() + convertedNumber;
+             }
+             return convertedNumber;*/
+            return ConvertFromDecimalsystemtoAnother(number, 8);
 
-            while (number > 0)
-            {
-                remainder = number % 8;
-                number /= 8;
-                convertedNumber = remainder.ToString() + convertedNumber;
-            }
-            return convertedNumber;
         }
         public string ConvertFromDecimalsystemToNonaersystem(int number)
         {
@@ -105,6 +118,9 @@ namespace DevTool
 
         private string ConvertFromDecimalsystemtoAnother(int numberToConvert, int system)
         {
+            string convertedNumber = string.Empty;
+            int remainder;
+           
             while (numberToConvert > 0)
             {
                 remainder = numberToConvert % system;
