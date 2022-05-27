@@ -9,7 +9,7 @@ namespace DevTool
     public class NumberConverter
     {
 
-        public string DecToBin(int number)
+        public string ConvertFromDecimalsystemToBinaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -22,7 +22,7 @@ namespace DevTool
             return binNumber;
         }
 
-        public string DecToTern(int number)
+        public string ConvertFromDecimalsystemToTernaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -34,7 +34,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToQuatern(int number)
+        public string ConvertFromDecimalsystemToQuatenaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -46,7 +46,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToQuin(int number)
+        public string ConvertFromDecimalsystemToQuinaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -58,7 +58,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToSen(int number)
+        public string ConvertFromDecimalsystemToSenaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -70,7 +70,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToSepten(int number)
+        public string ConvertFromDecimalsystemToSeptenaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -82,7 +82,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToOktal(int number)
+        public string ConvertFromDecimalsystemToOktalsystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -94,7 +94,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string DecToNon(int number)
+        public string ConvertFromDecimalsystemToNonaersystem(int number)
         {
             string binNumber = string.Empty;
             int remainder;

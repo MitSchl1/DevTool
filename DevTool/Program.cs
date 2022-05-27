@@ -253,42 +253,42 @@ namespace DevTool
                             case 2:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Binaersystem ist: " + numberConverter.DecToBin(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Binaersystem ist: " + numberConverter.ConvertFromDecimalsystemToBinaersystem(userNumberForConvertation));
                                 break; 
                             case 3:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Ternaersystem ist: " + numberConverter.DecToTern(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Ternaersystem ist: " + numberConverter.ConvertFromDecimalsystemToTernaersystem(userNumberForConvertation));
                                 break;
                             case 4:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Quatenaersystem ist: " + numberConverter.DecToQuatern(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Quatenaersystem ist: " + numberConverter.ConvertFromDecimalsystemToQuatenaersystem(userNumberForConvertation));
                                 break;
                             case 5:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Quinaersystem ist: " + numberConverter.DecToQuin(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Quinaersystem ist: " + numberConverter.ConvertFromDecimalsystemToQuinaersystem(userNumberForConvertation));
                                 break;
                             case 6:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Senaersystem ist: " + numberConverter.DecToSen(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Senaersystem ist: " + numberConverter.ConvertFromDecimalsystemToSenaersystem(userNumberForConvertation));
                                 break;
                             case 7:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Septenaersystem ist: " + numberConverter.DecToSepten(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Septenaersystem ist: " + numberConverter.ConvertFromDecimalsystemToSeptenaersystem(userNumberForConvertation));
                                 break;
                             case 8:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Oktalsystem ist: " + numberConverter.DecToOktal(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Oktalsystem ist: " + numberConverter.ConvertFromDecimalsystemToOktalsystem(userNumberForConvertation));
                                 break;
                             case 9:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
                                 userNumberForConvertation = int.Parse(Console.ReadLine());
-                                Console.WriteLine(userNumberForConvertation + " im Nonaersystem ist: " + numberConverter.DecToNon(userNumberForConvertation));
+                                Console.WriteLine(userNumberForConvertation + " im Nonaersystem ist: " + numberConverter.ConvertFromDecimalsystemToNonaersystem(userNumberForConvertation));
                                 break;
                             default:
                                 Console.WriteLine("nicht vorhanden");
