@@ -9,7 +9,7 @@ namespace DevTool
     public class NumberConverter
     {
 
-        public string ConvertDecToBin(int number)
+        public string DecToBin(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -22,7 +22,7 @@ namespace DevTool
             return binNumber;
         }
 
-        public string ConvertDecToTern(int number)
+        public string DecToTern(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -34,7 +34,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToQuatern(int number)
+        public string DecToQuatern(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -46,7 +46,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToQuin(int number)
+        public string DecToQuin(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -58,7 +58,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToSen(int number)
+        public string DecToSen(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -70,7 +70,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToSepten(int number)
+        public string DecToSepten(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -82,7 +82,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToOktal(int number)
+        public string DecToOktal(int number)
         {
             string binNumber = string.Empty;
             int remainder;
@@ -94,7 +94,7 @@ namespace DevTool
             }
             return binNumber;
         }
-        public string ConvertDecToNon(int number)
+        public string DecToNon(int number)
         {
             string binNumber = string.Empty;
             int remainder;

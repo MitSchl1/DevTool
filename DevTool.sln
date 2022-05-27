@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
+VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTool", "DevTool\DevTool.csproj", "{E9B1EBE6-1981-4A04-83BB-6F9BA68D1037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToolTests", "DevToolTests\DevToolTests.csproj", "{601F1093-743B-4800-A95D-9960F97A0034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToolTests", "DevToolTests\DevToolTests.csproj", "{601F1093-743B-4800-A95D-9960F97A0034}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72C0199B-BEF8-41B1-A98E-D854FF32A3A5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
