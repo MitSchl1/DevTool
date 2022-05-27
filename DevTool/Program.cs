@@ -31,7 +31,7 @@ namespace DevTool
                 Console.WriteLine("1 fuer etwas Berechnen");
                 Console.WriteLine("2 fuer eine Rechnung erklären lassen");
                 Console.WriteLine("3 um eine Zahl zu konvertieren");
-                int userinput = int.Parse(Console.ReadLine());
+                int userinput = GetUserDecision();
                 switch (userinput)
                 {
                     case 0:
@@ -39,7 +39,7 @@ namespace DevTool
                         break;
                     case 1:
                         CalculationPosisibilities();
-                        int whichCalcProcess = int.Parse(Console.ReadLine());
+                        int whichCalcProcess = GetUserDecision();
                         switch (whichCalcProcess)
                         {
                             case 0:
@@ -62,94 +62,94 @@ namespace DevTool
                                 break;
                             case 5:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Sinus berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Sinus von " + userNumber + " ist " + advancedCalculator.SinCalc(userNumber));
                                 break;
                             case 6:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Cosinus berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Cosinus von " + userNumber + " ist " + advancedCalculator.CosCalc(userNumber));
                                 break;
                             case 7:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Tangens berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Tangens von " + userNumber + " ist " + advancedCalculator.TanCalc(userNumber));
                                 break;
                             case 8:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Logarithums zur Basis 2 berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Logarithums zur Basis 2 von " + userNumber + " ist " + advancedCalculator.Log2Calc(userNumber));
                                 break;
                             case 9:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher  der Logarithums zur Basis 10 berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Logarithums zur Basis 10 von " + userNumber + " ist " + advancedCalculator.Log10Calc(userNumber));
                                 break;
                             case 10:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Logarithums zur Basis E  berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Logarithums zur Basis E von " + userNumber + " ist " + advancedCalculator.LogECalc(userNumber));
                                 break;
                             case 11:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der Logarithmus berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Bitte die Basis angeben");
-                                double logBase = double.Parse(Console.ReadLine());
+                                double logBase = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der Logarithmus zur Basis " + logBase + " von " + userNumber + " ist " + advancedCalculator.LogCalcToAnyBase(userNumber, logBase));
                                 break;
                             case 12:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der ASinus berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der ASinus von " + userNumber + " ist " + advancedCalculator.AsinCalc(userNumber));
                                 break;
                             case 13:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der AKosinus berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der AKosinus von " + userNumber + " ist " + advancedCalculator.AcosCalc(userNumber));
                                 break;
                             case 14:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der ATangens berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der ATangens von " + userNumber + " ist " + advancedCalculator.AtanCalc(userNumber));
                                 break;
                             case 15:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der SinusH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der SinusH von " + userNumber + " ist " + advancedCalculator.SinhCalc(userNumber));
                                 break;
                             case 16:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der CosinusH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der CosinusH von " + userNumber + " ist " + advancedCalculator.CoshCalc(userNumber));
                                 break;
                             case 17:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der TangensH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der TangensH von " + userNumber + " ist " + advancedCalculator.TanhCalc(userNumber));
                                 break;
                             case 18:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der ASinusH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der ASinusH von " + userNumber + " ist " + advancedCalculator.AsinhCalc(userNumber));
                                 break;
                             case 19:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der AKosinusH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der AKosinusH von " + userNumber + " ist " + advancedCalculator.AcosHCalc(userNumber));
                                 break;
                             case 20:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher der ATangensH berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Der ATangensH von " + userNumber + " ist " + advancedCalculator.AtanhCalc(userNumber));
                                 break;
                             case 21:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher die Wurzel berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("Die Wurzel von " + userNumber + " ist " + advancedCalculator.SqrtCalc(userNumber));
                                 break;
                             case 22:
                                 Console.WriteLine("Bitte die Zahl eingeben von welcher die Wurzel berechnet werden soll");
-                                userNumber = double.Parse(Console.ReadLine());
+                                userNumber = GetUserDecisionAsDouble();
                                 Console.WriteLine("e hoch " + userNumber + " ist " + advancedCalculator.ExpCalc(userNumber));
                                 break;
                             case 23:
@@ -163,7 +163,7 @@ namespace DevTool
                         break;
                     case 2:
                         CalculationPosisibilities();
-                        int whichDescription = int.Parse(Console.ReadLine());
+                        int whichDescription = GetUserDecision();
                         switch (whichDescription)
                         {
                             case 0:
@@ -245,49 +245,49 @@ namespace DevTool
                         break;
                     case 3:
                         ConvertPosisibilities();
-                        int whichConvertation = int.Parse(Console.ReadLine());
+                        int whichConvertation = GetUserDecision();
                         switch (whichConvertation)
                         {
                             case 0:
                                 break;
                             case 2:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Binaersystem ist: " + numberConverter.ConvertFromDecimalsystemToBinaersystem(userNumberForConvertation));
                                 break; 
                             case 3:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Ternaersystem ist: " + numberConverter.ConvertFromDecimalsystemToTernaersystem(userNumberForConvertation));
                                 break;
                             case 4:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Quatenaersystem ist: " + numberConverter.ConvertFromDecimalsystemToQuatenaersystem(userNumberForConvertation));
                                 break;
                             case 5:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Quinaersystem ist: " + numberConverter.ConvertFromDecimalsystemToQuinaersystem(userNumberForConvertation));
                                 break;
                             case 6:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Senaersystem ist: " + numberConverter.ConvertFromDecimalsystemToSenaersystem(userNumberForConvertation));
                                 break;
                             case 7:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Septenaersystem ist: " + numberConverter.ConvertFromDecimalsystemToSeptenaersystem(userNumberForConvertation));
                                 break;
                             case 8:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Oktalsystem ist: " + numberConverter.ConvertFromDecimalsystemToOktalsystem(userNumberForConvertation));
                                 break;
                             case 9:
                                 Console.WriteLine("Bitte die Zahl eingeben welche konvertiert werden soll");
-                                userNumberForConvertation = int.Parse(Console.ReadLine());
+                                userNumberForConvertation = GetUserDecision();
                                 Console.WriteLine(userNumberForConvertation + " im Nonaersystem ist: " + numberConverter.ConvertFromDecimalsystemToNonaersystem(userNumberForConvertation));
                                 break;
                             default:
@@ -354,6 +354,28 @@ namespace DevTool
             Console.WriteLine("7 fuer Dezimal in Septenaer");
             Console.WriteLine("8 fuer Dezimal in Oktal");
             Console.WriteLine("9 fuer Dezimal in Nonaer");
+        }
+
+         static int GetUserDecision()
+        {
+            int userDecision;
+            string user = Console.ReadLine();
+            if (!int.TryParse(user, out userDecision))
+            {
+
+            }
+            return userDecision;
+        }
+
+        static double GetUserDecisionAsDouble()
+        {
+            double userDecision;
+            string user = Console.ReadLine();
+            if (!double.TryParse(user, out userDecision))
+            {
+
+            }
+            return userDecision;
         }
     }
 }

@@ -62,6 +62,9 @@ csharp_space_around_binary_operators = before_and_after
 csharp_style_throw_expression = true:suggestion
 csharp_indent_labels = one_less_than_current
 
+# CS8604: Mögliches Nullverweisargument.
+dotnet_diagnostic.CS8604.severity = none
+
 [*.vb]
 #### Benennungsstile ####
 
